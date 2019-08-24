@@ -7,7 +7,8 @@
     "start": "node src/app.js",
     "serve:server": "nodemon src/app.js",
     "serve:client": "cd client && npm run dev",
-    "dev": "concurrently \"npm run serve:server\" \"npm run serve:client\""
+    "dev": "concurrently \"npm run serve:server\" \"npm run serve:client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "repository": {
     "type": "git",
