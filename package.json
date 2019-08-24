@@ -4,6 +4,7 @@
   "description": "Boilerplate for developing full stack apps with Express and Svelte.js",
   "main": "src/app.js",
   "scripts": {
+    "client-install": "cd client && npm install",
     "start": "node src/app.js",
     "serve:server": "nodemon src/app.js",
     "serve:client": "cd client && npm run dev",
