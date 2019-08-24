@@ -9,7 +9,7 @@
     "serve:server": "nodemon src/app.js",
     "serve:client": "cd client && npm run dev",
     "dev": "concurrently \"npm run serve:server\" \"npm run serve:client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install client && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
