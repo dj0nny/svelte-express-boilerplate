@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "serve:client": "nodemon src/app.js"
+    "serve:server": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/dj0nny/svelte-express-boilerplate#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "concurrently": "^4.1.2",
     "express": "^4.17.1"
   },
