@@ -1,0 +1,27 @@
+{
+  "name": "svelte-express-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for developing full stack apps with Express and Svelte.js",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "serve:client": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dj0nny/svelte-express-boilerplate.git"
+  },
+  "author": "dj0nny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dj0nny/svelte-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dj0nny/svelte-express-boilerplate#readme",
+  "dependencies": {
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
