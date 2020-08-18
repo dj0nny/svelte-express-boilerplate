@@ -5,8 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "client-install": "cd client && npm install",
-    "start": "node src/app.js",
-    "serve:server": "nodemon src/app.js",
+    "start": "node src/index.js",
+    "serve:server": "nodemon src/index.js",
     "serve:client": "cd client && npm run dev",
     "dev": "concurrently \"npm run serve:server\" \"npm run serve:client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd client && npm install && npm run build"
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/dj0nny/svelte-express-boilerplate#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "concurrently": "^5.2.0",
+    "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1"
   },
