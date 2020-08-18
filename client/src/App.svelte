@@ -3,12 +3,13 @@
   import axios from 'axios';
 
 	import List from './components/List.svelte';
-  let listItems = [];
+  let emojis = [];
 
   onMount(async () => {
-    const res = await axios.get('http://localhost:1000/api/test');
-    listItems = await res.data;
+    const { data } = await axios.get('http://localhost:1000/api/v1/emojis');
+    console.log(data.emojis);
+    emojis = data.emojis
   });
 </script>
 
-<List items={listItems} />
+<List emojis={emojis} />

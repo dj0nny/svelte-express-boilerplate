@@ -1,9 +1,9 @@
 <script>
-  export let items;
+  export let emojis;
 </script>
 
 <ul>
-  {#each items as item}
-    <li> <strong>{item.id}</strong>: {item.body} </li>
+  {#each emojis as emoji}
+    <li> {emoji} </li>
   {/each}
 </ul>
