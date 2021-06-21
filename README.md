@@ -35,7 +35,7 @@ npm run serve:server
 # Run the Svelte client only
 npm run serve:client
 
-# Server runs on http://localhost:1000 and client on http://localhost:5000
+# Server runs on http://localhost:5678 and client on http://localhost:5000
 ```
 
 ## Built with ❤️ using:
