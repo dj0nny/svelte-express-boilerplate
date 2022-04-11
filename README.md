@@ -42,7 +42,7 @@ npm run serve:client
 
 * [Node.js](https://nodejs.org/en/) - JavaScript runtime built on Chrome's V8 JavaScript engine.
 * [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
-* [Svelte.js](https://github.com/u3u/vue-hooks) - Javascript framework
+* [Svelte.js](https://svelte.dev/) - Javascript framework
 
 ## Contributing
 
