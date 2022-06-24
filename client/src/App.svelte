@@ -6,7 +6,7 @@
   let emojis = [];
 
   onMount(async () => {
-    const { data } = await axios.get('http://localhost:1000/api/v1/emojis');
+    const { data } = await axios.get('http://localhost:5678/api/v1/emojis');
     console.log(data.emojis);
     emojis = data.emojis
   });
