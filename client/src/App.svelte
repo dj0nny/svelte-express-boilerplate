@@ -12,4 +12,4 @@
   });
 </script>
 
-<List emojis={emojis} />wrf
+<List emojis={emojis} />
