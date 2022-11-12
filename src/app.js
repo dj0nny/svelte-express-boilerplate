@@ -8,19 +8,20 @@ const api = require('./api');
 const { notFound, errorHandler } = require('./middlewares/errors.middleware');
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/public'));
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'));
-  });
+	app.use(express.static('client/public'));
+	app.get('*', (req, res) => {
+		res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'));
+	});
 }
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.status(200).json({
-    message: '📦 Svelte Express Boilerplate 📦' 
-  });
+	res.status(200).json({
+		message: '📦 Svelte Express Boilerplate 📦',
+	});
 });
 
 app.use('/api/v1', api);
